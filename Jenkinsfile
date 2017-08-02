@@ -3,8 +3,8 @@ pipeline {
   stages {
     stage('BCL2FASTQ') {
       steps {
-        echo '${PWD}'
-        sh '/usr/local/bin/snakemake'
+        sh '''pwd;
+/usr/local/bin/snakemake'''
       }
     }
   }
