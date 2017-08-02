@@ -5,6 +5,9 @@ pipeline {
   }
   stages {
     stage('MPA-00002') {
+        steps {
+          echo 'MPA-00002 Pipeline'
+        }
     }
     stage('Trigger') {
 	steps {
