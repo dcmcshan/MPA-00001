@@ -4,6 +4,7 @@ pipeline {
     stage('BCL2FASTQ') {
       steps {
         sh 'snakemake'
+        echo '${PWD}'
       }
     }
   }
