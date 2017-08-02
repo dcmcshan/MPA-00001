@@ -4,6 +4,11 @@ pipeline {
         cron('* * * * *')
   }
   stages {
+    stage('Trigger') {
+	steps {
+	  sh 'pwd'
+	  echo 'Setup config.yaml to point to the triggered directory'
+	}
     }
     stage('BCL2FASTQ') {
       steps {
