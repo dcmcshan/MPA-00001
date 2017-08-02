@@ -1,9 +1,11 @@
 pipeline {
   agent any
- triggers {
+  triggers {
         cron('* * * * *')
   }
   stages {
+    stage('MPA-00002') {
+    }
     stage('Trigger') {
 	steps {
 	  sh 'pwd'
